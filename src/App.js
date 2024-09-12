@@ -19,7 +19,7 @@ function App() {
         {/* Socials - Placeholder for images */}
         <nav className="socials">
           <a href="http://t.me/trialanderrorPortal" target="_blank" rel="noopener noreferrer">
-            <img src="/Drawing-9.sketchpad.png" alt="Telegram" />
+            <img src="Telegram.png" alt="Telegram" />
           </a>
           <a href="https://x.com/trialcoin" target="_blank" rel="noopener noreferrer">
             <img src="X.png" alt="X" />
