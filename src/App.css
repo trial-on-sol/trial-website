@@ -1,0 +1,375 @@
+/* General Styles */
+.App {
+  font-family: 'Arial', sans-serif;
+  background-color:black;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  overflow-x: hidden;
+}
+
+h1, h2 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Fullscreen sections */
+.section {
+  width: 100vw;
+  height: 100vh; /* Make each section full-screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start; /* Snap to the start of each section */
+  padding: 2rem;
+}
+
+.App-header {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.headline {
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif; /* Custom font */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+/* Social Media Section */
+nav.socials {
+  display: flex;
+  flex-wrap: wrap; /* Allows icons to wrap on smaller screens */
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+nav.socials img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s;
+}
+
+nav.socials img:hover {
+  transform: scale(1.1);
+}
+
+/* Wallet Address */
+.wallet-address {
+  font-size: 1.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+  color: #ccc;
+  text-align: center;
+  width: 80%;
+  word-wrap: break-word;
+}
+
+/* How to Buy Section */
+.how-to-buy {
+  background-color: #111;
+  text-align: left;
+  padding: 2rem;
+}
+
+.how-to-buy h2 {
+  font-size: 3rem;
+}
+
+.how-to-buy ol {
+  font-size: 1.5rem;
+  list-style: decimal;
+  margin-left: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Roadmap Section */
+.roadmap {
+  background-color: #222;
+  color: #fff;
+  text-align: center; /* Center text and items */
+  padding: 1rem; /* Adjusted padding to fit within dimensions */
+  max-width: 1920px; /* Ensure section fits within the specified width */
+  max-height: 1080px; /* Ensure section fits within the specified height */
+  overflow-y: auto; /* Allow vertical scrolling if needed */
+  margin: 0 auto; /* Center section horizontally */
+}
+
+/* Roadmap Headline */
+.roadmap h2 {
+  position: relative;
+  top: -200px;
+  left: 17px;
+  font-size: 4rem; /* Adjusted font size for fit */
+  font-family: 'Poppins', sans-serif; /* Elegant font */
+  font-weight: bold;
+  margin-bottom: 1rem; /* Spacing below the headline */
+  color: #e0e0e0; /* Lighter color for contrast */
+}
+
+/* Container for roadmap items */
+.roadmap-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  gap: 1rem; /* Space between items */
+  width: 100%; /* Full width of the roadmap section */
+  height: auto; /* Adjust height based on content */
+}
+
+/* Individual roadmap items */
+.roadmap-item {
+  background-color: #333;
+  padding: 1rem; /* Adjusted padding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
+  width: 100%; /* Full width of the container */
+  max-width: 400px; /* Ensure items don't stretch too wide */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+  text-align: left; /* Align text to left inside items */
+  font-family: 'Poppins', sans-serif;
+}
+
+.roadmap-item h3 {
+  font-size: 1.5rem; /* Adjusted subheading size */
+  font-weight: bold;
+  margin-bottom: 0.5rem; /* Spacing below subheading */
+}
+
+.roadmap-item p {
+  font-size: 1rem; /* Adjusted font size */
+}
+
+/* Hover effects for roadmap items */
+.roadmap-item:hover {
+  transform: translateY(-3px); /* Slight lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+
+
+
+/* Scroll snapping and behavior */
+html, body {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth; /* Smooth scroll between sections */
+}
+
+.App {
+  scroll-snap-type: y mandatory;
+}
+
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  transition: opacity 0.3s;
+}
+
+.navbar a:hover {
+  opacity: 0.7;
+}
+
+/* Responsive Layout for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .headline {
+    font-size: 2.5rem; /* Smaller headline */
+  }
+
+  .wallet-address {
+    font-size: 1.2rem;
+  }
+
+  .how-to-buy ol {
+    font-size: 1.2rem;
+  }
+
+  .roadmap-wrapper {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Full height of parent */
+    width: 100%; /* Full width of parent */
+    padding: 0 1rem; /* Add padding to handle small overflow */
+  }
+  
+  /* Roadmap Section */
+  .roadmap {
+    background-color: #222;
+    color: #fff;
+    text-align: center; /* Center text and items */
+    padding: 1rem;
+    max-width: 430px; /* Ensure section fits within the specified width */
+    max-height: 932px; /* Ensure section fits within the specified height */
+    overflow-y: auto; /* Allow vertical scrolling if needed */
+    width: 100%; /* Full width to utilize max-width */
+    box-sizing: border-box; /* Include padding in width/height calculations */
+  }
+  
+  /* Roadmap Headline */
+  .roadmap h2 {
+    left:0px;
+    font-size: 3rem; /* Adjusted font size for fit */
+    font-family: 'Poppins', sans-serif; /* Elegant font */
+    font-weight: bold;
+    margin-bottom: 1rem; /* Spacing below the headline */
+    color: #e0e0e0; /* Lighter color for contrast */
+  }
+  
+  /* Container for roadmap items */
+  .roadmap-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    gap: 1rem; /* Space between items */
+    width: 100%; /* Full width of the roadmap section */
+    height: auto; /* Adjust height based on content */
+  }
+  
+  /* Individual roadmap items */
+  .roadmap-item {
+    background-color: #333;
+    padding: 1rem; /* Adjusted padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
+    width: 83%; /* Full width of the container */
+    max-width: 400px; /* Ensure items don't stretch too wide */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+    font-family: 'Poppins', sans-serif;
+    text-align: left; /* Align text to left inside items */
+  }
+  
+  .roadmap-item h3 {
+    font-size: 1.5rem; /* Adjusted subheading size */
+    font-weight: bold;
+    margin-bottom: 0.5rem; /* Spacing below subheading */
+  }
+  
+  .roadmap-item p {
+    font-size: 1rem; /* Adjusted font size */
+  }
+  
+  /* Hover effects for roadmap items */
+  .roadmap-item:hover {
+    transform: translateY(-3px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+  }
+
+  .roadmap-item {
+    min-width: 150px; /* Smaller roadmap items */
+    padding: 1.5rem;
+  }
+
+  /* Navigation */
+  .navbar ul {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  /* How to Buy Section */
+.how-to-buy {
+  background-color: #111;
+  color: #fff;
+  text-align: center; /* Center text */
+  padding: 2rem;
+  max-width: 430px; /* Set max width */
+  margin: 0 auto; /* Center horizontally */
+  box-sizing: border-box; /* Include padding in width calculations */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+}
+
+/* How to Buy Headline */
+.how-to-buy h2 {
+  font-size: 2.5rem; /* Adjusted font size */
+  font-family: 'Poppins', sans-serif; /* Elegant font */
+  font-weight: bold;
+  margin-bottom: 1rem; /* Spacing below the headline */
+  color: #e0e0e0; /* Lighter color for contrast */
+}
+
+/* How to Buy Ordered List */
+.how-to-buy ol {
+  font-size: 1.2rem; /* Adjust font size for readability */
+  list-style: decimal;
+  margin: 0 auto; /* Center the list */
+  padding-left: 1.5rem; /* Space from the left */
+  max-width: 80%; /* Limit width */
+  text-align: left; /* Align text to the left */
+}
+
+/* How to Buy List Items */
+.how-to-buy li {
+  margin-bottom: 1rem; /* Space between list items */
+}
+}
+
+@media screen and (max-width: 480px) {
+  .headline {
+    font-size: 2rem; /* Smaller headline for mobile */
+  }
+  .roadmap-item {
+    padding: 1.5rem; /* Adjust padding */
+  }
+
+  .wallet-address {
+    font-size: 1rem;
+  }
+
+  .how-to-buy ol {
+    font-size: 1rem;
+  }
+
+ 
+  /* Adjusting navbar for smaller screens */
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+  }
+
+  .navbar li {
+    padding-bottom: 5px;
+  }
+
+  .navbar a {
+    font-size: 1rem; /* Smaller font size for mobile */
+  }
+}
