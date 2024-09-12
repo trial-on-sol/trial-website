@@ -22,19 +22,19 @@ function App() {
             <img src="/Drawing-9.sketchpad.png" alt="Telegram" />
           </a>
           <a href="https://x.com/trialcoin" target="_blank" rel="noopener noreferrer">
-            <img src="/Drawing-11.sketchpad.png" alt="X" />
+            <img src="X.png" alt="X" />
           </a>
           <a href="https://dexscreener.com/solana/8vrml7gnlckcdcdoxoygzfarw6tkfi5s73a8fxhmjphb" target="_blank" rel="noopener noreferrer">
             <img src="DEX.png" alt="DexScreener" />
           </a>
           <a href="https://www.youtube.com/@TriAL-p7t" target="_blank" rel="noopener noreferrer">
-            <img src="/Drawing-12.sketchpad.png" alt="YouTube" />
+            <img src="Youtube.png" alt="YouTube" />
           </a>
           <a href="https://www.instagram.com/_trialanderror404/?utm_source=qr&igsh=MXd4OHY3bXhxNTAyZw%20%20" target="_blank" rel="noopener noreferrer">
-            <img src="/Drawing-7.sketchpad.png" alt="Instagram" />
+            <img src="Insta.png" alt="Instagram" />
           </a>
           <a href="https://www.tiktok.com/@trial.and.error404" target="_blank" rel="noopener noreferrer">
-            <img src="/Drawing-5.sketchpad.png" alt="TikTok" />
+            <img src="Tiktok.png" alt="TikTok" />
           </a>
         </nav>
 
